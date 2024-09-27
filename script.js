@@ -13,7 +13,7 @@ for (let i = 1; i<=16; i++); {
 
 let divs = document.querySelectorAll(".container div");
 divs.forEach((div) => {
-    div.addEventListner("mouseover", () => {
+    div.addEventListener("mouseover", () => {
         div.style.backgroundColor = "pink";
     });
 });
