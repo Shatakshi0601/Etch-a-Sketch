@@ -1,0 +1,33 @@
+.container > div {
+    outline : #FF0000 1px;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin:0;
+    padding:0;
+}
+
+.container {
+    outline: #0000FF 1px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #0000FF;
+}
+
+button {
+    display:block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 20px;
+    width: 250px;
+}
