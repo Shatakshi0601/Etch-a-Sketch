@@ -10,7 +10,7 @@ p{
 }
 
 .container {
-    outline: #0000FF 1px;
+    outline: #008000 1px;
     display: flex;
     flex-wrap: wrap;
     width: 800px;
