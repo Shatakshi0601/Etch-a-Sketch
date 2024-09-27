@@ -1,5 +1,5 @@
 .container > div {
-    outline : #FF0000 1px solid;
+    outline : red solid 1px ;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,7 @@ p{
 }
 
 .container {
-    outline: #008000 1px solid;
+    outline: green solid 1px ;
     display: flex;
     flex-wrap: wrap;
     width: 800px;
