@@ -12,6 +12,10 @@ for (let i = 1; i<=16; i++); {
 }
 
 let divs = querySelectorAll(".container div");
-
+divs.forEach((div) => {
+    div.addEventListner("mouseover", () => {
+        div.style.backgroundColor = "pink";
+    });
+});
 
 
