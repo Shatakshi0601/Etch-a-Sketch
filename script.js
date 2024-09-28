@@ -11,15 +11,15 @@ for (let i = 1; i <= 16; i++) {
   }
 }
 
-// hover effect
+
 let divs = document.querySelectorAll(".container div");
 divs.forEach((div) => {
   div.addEventListener("mouseover", () => {
-    div.style.backgroundColor = "black";
+    div.style.backgroundColor = "pink";
   });
 });
 
-// new grid button
+
 let button = document.querySelector("button");
 button.addEventListener("click", () => {
   let boxs = parseInt(prompt("how many squares per side?"));
@@ -41,7 +41,7 @@ button.addEventListener("click", () => {
 
     divs.forEach((div) => {
       div.addEventListener("mouseover", () => {
-        div.style.backgroundColor = "black";
+        div.style.backgroundColor = "pink";
       });
     });
   }
