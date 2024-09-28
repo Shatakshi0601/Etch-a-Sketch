@@ -1,33 +1,44 @@
 let container = document.querySelector(".container");
 
-// Function to create grid squares
-function createGrid(boxes) {
-    container.innerHTML = ""; // Clear existing grid
-    for (let i = 0; i < boxes; i++) {
-        for (let j = 0; j < boxes; j++) {
-            let div = document.createElement("div");
-            div.classList.add("grid-square");
-            container.appendChild(div);
-        }
-    }
+for (let i = 1; i <= 16; i++) {
+  for (let j = 1; j <= 16; j++) {
+    let div = document.createElement("div");
+    div.style.width = 800 / 16 + "px";
+    div.style.height = 800 / 16 + "px";
+    container.appendChild(div);
+  }
 }
 
-// Initial grid creation
-createGrid(16);
 
-// Event delegation for mouseover effect
-container.addEventListener("mouseover", (event) => {
-    if (event.target.classList.contains("grid-square")) {
-        event.target.style.backgroundColor = "pink";
-    }
+let divs = document.querySelectorAll(".container div");
+divs.forEach((div) => {
+  div.addEventListener("mouseover", () => {
+    div.style.backgroundColor = "pink";
+  });
 });
+
 
 let button = document.querySelector("button");
 button.addEventListener("click", () => {
-    let boxes = parseInt(prompt("How many squares per side?"));
-    if (boxes > 100) {
-        alert("Too big!");
-    } else {
-        createGrid(boxes);
+  let boxs = parseInt(prompt("how many squares per side?"));
+  if (boxs > 100) {
+    alert("too big");
+  } else {
+    container.innerHTML = "";
+    for (let i = 1; i <= boxs; i++) {
+      for (let j = 1; j <= boxs; j++) {
+        let div = document.createElement("div");
+        div.style.width = 800 / boxs + "px";
+        div.style.height = 800 / boxs + "px";
+        container.appendChild(div);
+      }
     }
+    let divs = document.querySelectorAll(".container div");
+
+    divs.forEach((div) => {
+      div.addEventListener("mouseover", () => {
+        div.style.backgroundColor = "pink";
+      });
+    });
+  }
 });
