@@ -4,8 +4,8 @@ let container = document.querySelector(".container");
 function createGrid(boxes) {
     container.innerHTML = ""; 
     container.style.gridTemplateColumns = `repeat(${boxes}, 1fr)`; 
-    for (let i = 0; i < boxes; i++) {
-        for (let j = 0; j < boxes; j++) {
+    for (let i = 1; i < boxes; i++) {
+        for (let j = 1; j < boxes; j++) {
             let div = document.createElement("div");
             let num = document.createElement("p");
             num.textContent = `${i * boxes + j + 1}`; 
