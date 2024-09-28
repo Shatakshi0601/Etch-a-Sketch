@@ -9,7 +9,6 @@ function createGrid(boxes) {
             let div = document.createElement("div");
             let num = document.createElement("p");
             num.textContent = `${i * boxes + j + 1}`; 
-            div.classList.add("grid-square");
             div.appendChild(num);
             container.appendChild(div);
         }
@@ -21,7 +20,7 @@ createGrid(16);
 
 
 container.addEventListener("mouseover", (event) => {
-    if (event.target.classList.contains("grid-square")) {
+    if (event.target.classList.contains(".container > div")) {
         event.target.style.backgroundColor = "pink";
     }
 });
