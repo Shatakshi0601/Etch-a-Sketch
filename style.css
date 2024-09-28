@@ -1,18 +1,23 @@
 .container {
     outline: #008000 1px solid;
     display: grid;
-    width: 800px;
-    height: 800px;
-    grid-template-columns: repeat(16, 1fr);
+    width: 80%; 
+    height: 80vh; 
     margin: 0 auto;
+    grid-template-columns: repeat(16, 1fr); 
+    gap: 5px; 
 }
 
 .container > div {
     outline: #FF0000 1px solid;
     margin: 0;
     padding: 0;
+    transition: background-color 0.3s; 
 }
 
+.container > div:hover {
+    background-color: pink; 
+}
 
 h1 {
     text-align: center;
@@ -27,4 +32,13 @@ button {
     font-size: 20px;
     width: 250px;
     cursor: pointer;
+    background-color: #008000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+button:hover {
+    background-color: #005700; 
+    transition: background-color 0.3s; 
 }
