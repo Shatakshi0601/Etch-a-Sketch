@@ -10,7 +10,8 @@
     outline: #FF0000 1px solid;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s; 
+    min-width: 100px;
+    min-height: 100px; 
 }
 
 
@@ -26,5 +27,5 @@ button {
     padding: 10px;
     font-size: 20px;
     width: 250px;
-    cursor: pointer; /* Indicate that it's clickable */
+    cursor: pointer;
 }
