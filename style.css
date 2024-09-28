@@ -1,7 +1,6 @@
 .container {
     outline: #008000 1px solid;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     width: 80%; 
     height: 80vh; 
     margin: 0 auto;
@@ -11,9 +10,11 @@
 
 .container > div {
     outline: #FF0000 1px solid;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s;
 }
 
 .container > div:hover {
