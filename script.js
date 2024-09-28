@@ -22,17 +22,20 @@ divs.forEach((div) => {
 
 let button = document.querySelector("button");
 button.addEventListener("click", () => {
-  let boxs = parseInt(prompt("how many squares per side?"));
-  if (boxs > 100) {
+  let boxes = parseInt(prompt("how many squares per side?"));
+  if (boxes > 100) {
     alert("too big");
   } else {
     container.innerHTML = "";
-    for (let i = 1; i <= boxs; i++) {
-      for (let j = 1; j <= boxs; j++) {
+    container.style.gridTemplateColumns = `repeat(${boxes}, 1fr)`;
+    for (let i = 1; i <= boxes; i++) {
+      for (let j = 1; j <= boxes; j++) {
         let num = document.createElement("p");
         let div = document.createElement("div");
-        div.style.width = 800 / boxs + "px";
-        div.style.height = 800 / boxs + "px";
+        num.textContent = `${i * boxes + j + 1}`; 
+        div.classList.add("grid-square");
+        div.style.width = 800 / boxes + "px";
+        div.style.height = 800 / boxes + "px";
         div.appendChild(num);
         container.appendChild(div);
       }
