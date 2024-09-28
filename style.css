@@ -1,6 +1,7 @@
 .container {
     outline: #008000 1px solid;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     width: 80%; 
     height: 80vh; 
     margin: 0 auto;
