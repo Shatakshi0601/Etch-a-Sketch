@@ -1,7 +1,6 @@
 .container {
     outline: #008000 1px solid;
-    display: grid; /* Changed to grid layout */
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Adjust squares based on available space */
+    display: grid;
     width: 800px;
     height: 800px;
     margin: 0 auto;
@@ -11,12 +10,9 @@
     outline: #FF0000 1px solid;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    transition: background-color 0.3s; 
 }
 
-.container > div:hover {
-    background-color: rgba(255, 0, 0, 0.3); /* Optional hover effect */
-}
 
 h1 {
     text-align: center;
