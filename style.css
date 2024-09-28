@@ -1,12 +1,9 @@
 .container {
     outline: #008000 1px solid;
     display: grid;
-    width: 80%;
-    height: 80vh;
     width: 800px;
     height: 800px;
     margin: 0 auto;
-    gap: 10px;
 }
 
 .container > div {
